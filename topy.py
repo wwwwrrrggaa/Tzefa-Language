@@ -112,7 +112,7 @@ def CHANGECOMPARE(name, valuecompare, linenum):
 def WHILE(compare, endline, linenum):
     global listofindentchanges
     lineofwhile = "while" + makeparenthasis(["line(" + str(linenum) + ") and " + (
-                "getcond" + makeparenthasis([tostri(compare)])) + ".giveresult() and endline()"]) + ":"
+            "getcond" + makeparenthasis([tostri(compare)])) + ".giveresult() and endline()"]) + ":"
     listofindentchanges[linenum + 1] = 1
     listofindentchanges[int(endline) + 1] = -1
     return (lineofwhile)
@@ -129,7 +129,7 @@ def ITERATE(listi, endline, linenum):
 def COMPARE(compare, endline, linenum):
     global listofindentchanges
     lineofwhile = "if" + makeparenthasis(["line(" + str(linenum) + ") and " + (
-                "getcond" + makeparenthasis([tostri(compare)])) + ".giveresult() and endline()"]) + ":"
+            "getcond" + makeparenthasis([tostri(compare)])) + ".giveresult() and endline()"]) + ":"
     listofindentchanges[linenum + 1] = 1
     listofindentchanges[int(endline) + 1] = -1
     return (lineofwhile)
@@ -138,7 +138,7 @@ def COMPARE(compare, endline, linenum):
 def ELSECOMPARE(compare, endline, linenum):
     global listofindentchanges
     lineofwhile = "elif" + makeparenthasis(["line(" + str(linenum) + ") and " + (
-                "getcond" + makeparenthasis([tostri(compare)])) + ".giveresult() and endline()"]) + ":"
+            "getcond" + makeparenthasis([tostri(compare)])) + ".giveresult() and endline()"]) + ":"
     listofindentchanges[linenum + 1] = 1
     listofindentchanges[int(endline) + 1] = -1
     return (lineofwhile)
@@ -416,7 +416,7 @@ def makepredict(listi, i):
 
 
 def makepyfile(listi):
-    f = open(r'C:\freecode\test.py', 'w+')
+    f = open(r'C:\Users\yonat\OneDrive\Documents\pycharmprojects\Tzefa-Language\test.py', 'w+')
     f.write("from createdpython import * \n")
     counterindent = 0
     indent = "    "

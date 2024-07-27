@@ -2,7 +2,7 @@
 ### here it is:
 ### lets say function f calls a new instance of itself
 ### the new instance creates cond b and a new instance of itself
-### the new instance closes and returns to the instance with with cond b that also closes itself
+### the new instance closes and returns to the instance with  cond b that also closes itself
 ### now the original instance still owns cond b since no function was called to clean the stack or dict between the exiting calls
 dicte = {"EQUALS": 0, "BIGEQUALS": 1, "BIGGER": 2}
 listfunctions = [(lambda x, y: x == y), (lambda x, y: x >= y), (lambda x, y: x > y)]
