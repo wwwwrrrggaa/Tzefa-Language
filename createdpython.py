@@ -2,7 +2,7 @@
 ### here it is:
 ### lets say function f calls a new instance of itself
 ### the new instance creates cond b and a new instance of itself
-### the new instance closes and returns to the instance with with cond b that also closes itself
+### the new instance closes and returns to the instance with  cond b that also closes itself
 ### now the original instance still owns cond b since no function was called to clean the stack or dict between the exiting calls
 dicte = {"EQUALS": 0, "BIGEQUALS": 1, "BIGGER": 2}
 listfunctions = [(lambda x, y: x == y), (lambda x, y: x >= y), (lambda x, y: x > y)]
@@ -135,7 +135,7 @@ def printvars():
 def addvar(type, name, value):
     global allthevars
     if (name in allthevars[type]):
-        EERROR.varexistserror(name)
+        errore.varexistserror(name)
     else:
         pass
     if (type == "LIST"):
@@ -268,7 +268,6 @@ def add(Vali1, vali2):
 
 def dec(Vali1, vali2):
     getvar("INT", "TEMPORARY").forcewrite(getvar("INT", Vali1).read() - getvar("INT", vali2).read())
-
 
 def mult(Vali1, vali2):
     getvar("INT", "TEMPORARY").forcewrite(getvar("INT", Vali1).read() * getvar("INT", vali2).read())

@@ -10,6 +10,8 @@ def makeparenthasis(listofvals):
     stri = stri + " " + str(listofvals[-1]) + " )"
     return stri
 
+def strreadvalue(type,name):
+    return "getvar"+makeparenthasis([tostri(type),tostri(name)])+".read()"
 
 lineupdate = "endline() ;"
 infunction = False
@@ -65,8 +67,8 @@ def MAKEBOOLEAN(name, value, linenum):
 
 def NEWLIST(name, value, linenum):
     global infunction
-    inparan = str(name) + "= " + makeparenthasis([value])
-    inparan = makeparenthasis(['"LIST"', tostri(name), value])
+    inparan = strreadvalue("INT",value)
+    inparan = makeparenthasis(['"LIST"', tostri(name), inparan])
 
     if (infunction):
         declarestr = "addlocalvar" + inparan
@@ -112,7 +114,7 @@ def CHANGECOMPARE(name, valuecompare, linenum):
 def WHILE(compare, endline, linenum):
     global listofindentchanges
     lineofwhile = "while" + makeparenthasis(["line(" + str(linenum) + ") and " + (
-                "getcond" + makeparenthasis([tostri(compare)])) + ".giveresult() and endline()"]) + ":"
+            "getcond" + makeparenthasis([tostri(compare)])) + ".giveresult() and endline()"]) + ":"
     listofindentchanges[linenum + 1] = 1
     listofindentchanges[int(endline) + 1] = -1
     return (lineofwhile)
@@ -129,7 +131,7 @@ def ITERATE(listi, endline, linenum):
 def COMPARE(compare, endline, linenum):
     global listofindentchanges
     lineofwhile = "if" + makeparenthasis(["line(" + str(linenum) + ") and " + (
-                "getcond" + makeparenthasis([tostri(compare)])) + ".giveresult() and endline()"]) + ":"
+            "getcond" + makeparenthasis([tostri(compare)])) + ".giveresult() and endline()"]) + ":"
     listofindentchanges[linenum + 1] = 1
     listofindentchanges[int(endline) + 1] = -1
     return (lineofwhile)
@@ -138,7 +140,7 @@ def COMPARE(compare, endline, linenum):
 def ELSECOMPARE(compare, endline, linenum):
     global listofindentchanges
     lineofwhile = "elif" + makeparenthasis(["line(" + str(linenum) + ") and " + (
-                "getcond" + makeparenthasis([tostri(compare)])) + ".giveresult() and endline()"]) + ":"
+            "getcond" + makeparenthasis([tostri(compare)])) + ".giveresult() and endline()"]) + ":"
     listofindentchanges[linenum + 1] = 1
     listofindentchanges[int(endline) + 1] = -1
     return (lineofwhile)
@@ -222,8 +224,7 @@ def PRINTINTEGER(name, state, linenum):
 
 
 def SETINDEX(name, index, linenum):
-    name = tostri(name)
-    return ("line(" + str(linenum) + "); getvar('LIST'," + name + ").changeindex(" + str(index) + "); endline()")
+    return ("line(" + str(linenum) + "); getvar('LIST'," + tostri(name) + ").changeindex(" + strreadvalue("INT",index) + "); endline()")
 
 
 def GETSTRING(listname, name, linenum):
@@ -416,7 +417,7 @@ def makepredict(listi, i):
 
 
 def makepyfile(listi):
-    f = open(r'C:\freecode\test.py', 'w+')
+    f = open(r"C:\Users\yonat\OneDrive\projects\pycharmprojects\Tzefa-Language2\test.py", 'w+')
     f.write("from createdpython import * \n")
     counterindent = 0
     indent = "    "

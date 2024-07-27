@@ -1,0 +1,7 @@
+improvements:
+double check numbers?
+not limited to capitals, not limited to 3 words in line
+more commands and easier command names
+colors:code color, help color,notes color
+ability to copy and paste>assign name and do more.... using different colors
+gui with sliders,ability to edit and show errors

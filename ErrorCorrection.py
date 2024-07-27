@@ -1,6 +1,7 @@
-import pylev
-
-
+from fast_edit_distance import edit_distance
+listofindents=[]
+def updatesizelistofindnets(size):
+    listofindents = [0] * (size+1)
 def tosimple(func):
     simpler = ['a', 'b', 'c', 'd']
     simpler[0] = func[0]
@@ -151,9 +152,9 @@ def findword(somelist, word):
     for b in range(len(somelist)):
         i = somelist[b]
         if (i == word):
-            return i, b
+            return [i, b]
         else:
-            distance = pylev.classic_levenshtein(word, i)
+            distance = edit_distance(word, i,5)
             if (distance < min):
                 min = distance
                 tobereturned = [i, b]
@@ -161,7 +162,6 @@ def findword(somelist, word):
                 if (abs(len(word) - len(i)) < abs(len(word)) - len(tobereturned[0])):
                     tobereturned = [i, b]
     return tobereturned
-
 
 def handelfirstword(firstword):
     func, index = findword(listezfunc, firstword)
@@ -171,9 +171,8 @@ def handelfirstword(firstword):
         return (func, index, 1)
 
 
-def toline(line, index):
+def toline(line, index,listofindents):
     global counter
-    global listofindents
     global thetype
     global insidefunction
     disthreeline = line.split(" ")
@@ -246,13 +245,13 @@ def toline(line, index):
             threeline[2] = disthreeline[2]
     if (threeline[0] == "WHILE"):
         listofindents[counter] = 1
-        # listofindents[int(threeline[2])]=-1
+        listofindents[int(threeline[2])]=-1
     elif (threeline[0] == "ITERATE"):
         listofindents[counter] = 1
-        # listofindents[int(threeline[2])]=-1
+        listofindents[int(threeline[2])]=-1
     elif ("COMPARE" in threeline[0] or threeline[0].startswith("IF") or threeline[0].endswith("IF")):
         listofindents[counter] = 1
-        # listofindents[int(threeline[2])]=-1
+        listofindents[int(threeline[2])]=-1
     elif (threeline[0] == "DEFINE"):
         listofindents[int(counter)] = 1
     counter += 1

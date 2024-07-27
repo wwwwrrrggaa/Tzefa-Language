@@ -1,0 +1,11 @@
+Missions:
+clean code
+new edit distance
+fix the stack
+add support for lower case letters and more than 3 words in line
+think about improving the language!!!!
+runtime debuging
+compile to exe
+add strings of all numbers
+perf optimization?
+writing lower level compiler????
