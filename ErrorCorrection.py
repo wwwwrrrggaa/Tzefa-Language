@@ -1,4 +1,8 @@
 from fast_edit_distance import edit_distance
+import inflect
+def giveinstructions():
+    ### returns instructions for each function in the language for topy
+    return listfunctions,listezfunc
 listofindents=[]
 def updatesizelistofindnets(size):
     listofindents = [0] * (size+1)
@@ -116,6 +120,9 @@ listsimplefunc = [tosimple(i) for i in listfunctions]
 listofindents = []
 listezfunc = [i[0] for i in listfunctions]
 listintegers = ["TEMPORARY", 'LOCALINT', 'LOOPINTEGER']
+p = inflect.engine()
+for i in range(101):
+    listintegers.append(p.number_to_words(i).upper().replace("-","").replace(" ",""))
 liststrings = ["TEMPSTRING", "GLOBALSTR", 'LOOPSTRING', "INTEGER", "STRING", "LIST", "BOOLEAN"]
 listlists = ["GLOBALLIST", "LOOPLIST"]
 listconds = ['THETRUTH']
@@ -192,7 +199,6 @@ def toline(line, index,listofindents):
             listezfunc.append(newsomething[0])
             listfunctions.append(newsomething)
             simplerer = tosimple(newsomething)
-            simplerer[3] = 1
             listsimplefunc.append(simplerer)
     elif (threeline[0] == "INTEGERFUNCTION"):
         if (insidefunction):
@@ -206,7 +212,6 @@ def toline(line, index,listofindents):
             listezfunc.append(newsomething[0])
             listfunctions.append(newsomething)
             simplerer = tosimple(newsomething)
-            simplerer[3] = 1
             listsimplefunc.append(simplerer)
     elif (threeline[0] == "LISTFUNCTION"):
         if (insidefunction):
@@ -220,7 +225,6 @@ def toline(line, index,listofindents):
             listezfunc.append(newsomething[0])
             listfunctions.append(newsomething)
             simplerer = tosimple(newsomething)
-            simplerer[3] = 1
             listsimplefunc.append(simplerer)
     elif (simpler[0] == "RETURN"):
         if (len(thetype) == 0):

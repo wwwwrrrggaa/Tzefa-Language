@@ -1,32 +1,47 @@
 # Press the green button in the gutter to run the script.
 import ErrorCorrection
-
+import topy
 
 if __name__ == '__main__':
     textlist = [
-    "MAKEINTEGER INTEGERONE 96",
-    "MAKEINTEGER INTEGERTWO 144",
-    "MAKEINTEGER TEMPTWO 0",
-    "MAKEINTEGER ZERO 0",
-    "NEWLIST GCDLIST 0",
+    "MAKEINTEGER INTEGERONE 144",
+    "MAKEINTEGER INTEGERTWO 96",
+    "NEWLIST GCDLIST TWO",
+    "SETINDEX GCDLIST ZERO ",
+    "WRITEINTEGER GCDLIST INTEGERONE",
+    "SETINDEX GCDLIST ONE ",
+    "WRITEINTEGER GCDLIST INTEGERWO",
     "BASICCONDITION GCDCOMPARE BIGGER",
     "LEFESIDE GCDCOMPARE INTEGERTWO",
     "RIGHTSIDE GCDCOMPARE ZERO",
-    "LISTFUNCTION GCD GCBLIST",
-    "MODULU INTEGERONE INTEGERTWO",
-    "ASSIGNINT INTEGERONE INTEGERTWO",
-    "ASSIGNINT INTGERTWO TEMPORARY",
-    "IFTRUE GCDCOMPARE 12",
-    "GCD GCDLIST GCDLIST"
 
+
+    "LISTFUNCTION GCD GCBLIST",
+    "SETINDEX GCDLIST ZERO ",
+    "GETINTEGER GCDLIST INTEGERONE",
+    "SETINDEX GCDLIST ONE ",
+    "GETINTEGER GCDLIST INTEGERTWO",
+    "MODULU INTEGERONE INTEGERTWO",
+    "ASSIGNINT INTGERONE INTEGERTWO",
+    "ASSIGNINT INTGERTWO TEMPORARY",
+    "COMPARE GCDCOMPARE 24",
+    "SETINDEX GCDLIST ZERO ",
+    "WRITEINTEGER GCDLIST INTEGERONE",
+    "SETINDEX GCDLIST ONE ",
+    "WRITEINTEGER GCDLIST INTEGERWO",
+    "GCD GCDLIST GCDLIST",
+    "RETURN GCDLIST BREAK",
+
+    "GCD GCDLIST GCDLIST",
 
     ]
     listofindentchanges = [0] * (len(textlist) + 1)
-    #firstword=[ErrorCorrection.handelfirstword(textlist[i].split(" ")[0])[1] for i in range(len(textlist))]
-    #linelist = [ErrorCorrection.toline(textlist[i],firstword[i],listofindentchanges) for i in range(len(textlist))]
+
     compiledlinelist=[ErrorCorrection.toline
                       (textlist[lineindex],ErrorCorrection.handelfirstword(textlist[lineindex].split(" ")[0])[1],listofindentchanges)
                       for lineindex in range(len(textlist))]
-    import topy
+   #print(compiledlinelist)
+    listfunctions,listezfunctions=ErrorCorrection.giveinstructions()
+    topy.getinstructions(listfunctions,listezfunctions)
     topy.makepyfile(compiledlinelist)
     import test

@@ -1,4 +1,4 @@
-from  ErrorCorrection import getsimples,listfunctions
+
 thetype = None
 
 
@@ -14,10 +14,10 @@ def strreadvalue(type,name):
 
 lineupdate = "endline() ;"
 infunction = False
-dictoffunct = {i[0]: i for i in getsimples()}
+dictoffunct = {i[0]: i for i in [[0]]}
 # print(dictoffunct)
 dictofinstructions = {i: "thetext" for i in dictoffunct}
-listfunctionswithtypes = {i[0]: i for i in listfunctions}
+listfunctionswithtypes = {i[0]: i for i in [[0]]}
 listfunctionswithtypes["GREATESTDIV"] = ["GREATESTDIV", "LIST", "LIST"]
 for i in listfunctionswithtypes:
     for j in range(len(listfunctionswithtypes[i])):
@@ -26,7 +26,10 @@ for i in listfunctionswithtypes:
 
 listofindentchanges = [0 for i in range(1, 1000 + 1)]
 
-
+def getinstructions(listfunctions,listezfunctions):
+    global dictoffunct,listfunctionswithtypes
+    dictoffunct={i[0]: i for i in listezfunctions}
+    listfunctionswithtypes={i[0]: i for i in listfunctions}
 def tostri(value):
     return "'" + str(value) + "'"
 
@@ -416,7 +419,7 @@ def makepredict(listi, i):
 
 
 def makepyfile(listi):
-    f = open(r"C:\Users\yonat\PycharmProjects\Tzefa-Language\test.py", 'w+')
+    f = open(r"C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\test.py", 'w+')
     f.write("from createdpython import * \n")
     counterindent = 0
     indent = "    "
