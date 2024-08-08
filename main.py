@@ -1,8 +1,10 @@
 # Press the green button in the gutter to run the script.
 import ErrorCorrection
 import topy
-
-if __name__ == '__main__':
+import cProfile
+import pstats
+from pstats import SortKey
+def main():
     textlist = [
     "MAKEINTEGER INTEGERONE 144",
     "MAKEINTEGER INTEGERTWO 96",
@@ -45,3 +47,10 @@ if __name__ == '__main__':
     topy.getinstructions(listfunctions,listezfunctions)
     topy.makepyfile(compiledlinelist)
     import test
+if __name__ == '__main__':
+    cProfile.run('main()', 'output.prof')
+
+    # Print sorted stats
+    with open(r"C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\output_stats.txt", 'w') as f:
+        p = pstats.Stats('output.prof', stream=f)
+        p.sort_stats(SortKey.TIME).print_stats()

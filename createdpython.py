@@ -7,7 +7,7 @@
 dicte = {"EQUALS": 0, "BIGEQUALS": 1, "BIGGER": 2}
 listfunctions = [(lambda x, y: x == y), (lambda x, y: x >= y), (lambda x, y: x > y)]
 import sys
-import inflect
+import Number2Name
 linecount = 0
 currentline = 0
 linelimit = 1000
@@ -776,9 +776,8 @@ allthevars = {"INT": {"LOOPINTEGER": LOOPINTEGER, "TEMPORARY": TEMPORARY, "LOCAL
               "STR": {"LOOPSTRING": LOOPSTRING, "TEMPSTRING": TEMPSTRING, "LOCALSTR": LOCALSTR, "INTEGER": INTEGER,
                       "STRING": STRING, "LIST": LISTI, "BOOLEAN": BOOLEAN},
               "LIST": {"LOOPLIST": LOOPLIST, "LOCALLIST": LOCALLIST}, "BOOLEAN": {"LOOPBOOL": LOOPBOOL}}
-p = inflect.engine()
 for i in range(101):
-   allthevars["INT"][p.number_to_words(i).upper().replace("-","").replace(" ","")]=VALUE(name=p.number_to_words(i).upper().replace("-",""),value=i,readable=True, writable=False, TYPE="INT")
+   allthevars["INT"][Number2Name.get_name(i)]=VALUE(name=Number2Name.get_name(i),value=i,readable=True, writable=False, TYPE="INT")
 examplelocalvars = {"INT": {}, "STR": {}, "LIST": {}, "BOOLEAN": {}}
 dictlocalvars = examplelocalvars.copy()
 programlocals = {"INT": {"LOCALINT": allthevars["INT"]["LOCALINT"]}, "STR": {"LOCALSTR": allthevars["STR"]["LOCALSTR"]},

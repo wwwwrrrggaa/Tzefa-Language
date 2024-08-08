@@ -1,5 +1,5 @@
 from fast_edit_distance import edit_distance
-import inflect
+import Number2Name
 def giveinstructions():
     ### returns instructions for each function in the language for topy
     return listfunctions,listezfunc
@@ -120,9 +120,8 @@ listsimplefunc = [tosimple(i) for i in listfunctions]
 listofindents = []
 listezfunc = [i[0] for i in listfunctions]
 listintegers = ["TEMPORARY", 'LOCALINT', 'LOOPINTEGER']
-p = inflect.engine()
 for i in range(101):
-    listintegers.append(p.number_to_words(i).upper().replace("-","").replace(" ",""))
+    listintegers.append(Number2Name.get_name(i))
 liststrings = ["TEMPSTRING", "GLOBALSTR", 'LOOPSTRING', "INTEGER", "STRING", "LIST", "BOOLEAN"]
 listlists = ["GLOBALLIST", "LOOPLIST"]
 listconds = ['THETRUTH']
@@ -151,23 +150,28 @@ def sendlines(i):
 def giveindents():
     return listofindents
 
-
 def findword(somelist, word):
     min = 999
-    tobereturned = ["1234567890", "1234567890",
-                    "1234567890"]
+    tobereturned = [0, 0,
+                    0]
+    lentobereturned=16
     for b in range(len(somelist)):
+        lenword = len(word)
         i = somelist[b]
+        lenofi  = len(i)
         if (i == word):
             return [i, b]
         else:
-            distance = edit_distance(word, i,5)
+            distance = edit_distance(word, i,4)
             if (distance < min):
                 min = distance
                 tobereturned = [i, b]
+                lentobereturned = len(tobereturned[0])
             elif (distance == min):
-                if (abs(len(word) - len(i)) < abs(len(word)) - len(tobereturned[0])):
+                if (abs(lenword - lenofi) < abs(lenword- lentobereturned)):
                     tobereturned = [i, b]
+                    lentobereturned = len(tobereturned[0])
+
     return tobereturned
 
 def handelfirstword(firstword):
