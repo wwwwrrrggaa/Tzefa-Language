@@ -1,5 +1,4 @@
-import ErrorCorrection as translatorez
-
+from  ErrorCorrection import getsimples,listfunctions
 thetype = None
 
 
@@ -15,10 +14,10 @@ def strreadvalue(type,name):
 
 lineupdate = "endline() ;"
 infunction = False
-dictoffunct = {i[0]: i for i in translatorez.getsimples()}
+dictoffunct = {i[0]: i for i in getsimples()}
 # print(dictoffunct)
 dictofinstructions = {i: "thetext" for i in dictoffunct}
-listfunctionswithtypes = {i[0]: i for i in translatorez.listfunctions}
+listfunctionswithtypes = {i[0]: i for i in listfunctions}
 listfunctionswithtypes["GREATESTDIV"] = ["GREATESTDIV", "LIST", "LIST"]
 for i in listfunctionswithtypes:
     for j in range(len(listfunctionswithtypes[i])):
@@ -417,7 +416,7 @@ def makepredict(listi, i):
 
 
 def makepyfile(listi):
-    f = open(r"C:\Users\yonat\OneDrive\projects\pycharmprojects\Tzefa-Language2\test.py", 'w+')
+    f = open(r"C:\Users\yonat\PycharmProjects\Tzefa-Language\test.py", 'w+')
     f.write("from createdpython import * \n")
     counterindent = 0
     indent = "    "

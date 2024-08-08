@@ -189,7 +189,7 @@ def toline(line, index,listofindents):
             threeline[2] = findword(listype, disthreeline[2])[0]
             thetype.append(threeline[2])
             newsomething = [threeline[1], "STR", lookuptype[threeline[2]]]
-            listezfunc.append([newsomething[0]])
+            listezfunc.append(newsomething[0])
             listfunctions.append(newsomething)
             simplerer = tosimple(newsomething)
             simplerer[3] = 1
@@ -203,7 +203,7 @@ def toline(line, index,listofindents):
             threeline[2] = findword(listype, disthreeline[2])[0]
             thetype.append(threeline[2])
             newsomething = [threeline[1], "INT", lookuptype[threeline[2]]]
-            listezfunc.append([newsomething[0]])
+            listezfunc.append(newsomething[0])
             listfunctions.append(newsomething)
             simplerer = tosimple(newsomething)
             simplerer[3] = 1
@@ -217,7 +217,7 @@ def toline(line, index,listofindents):
             threeline[2] = findword(listype, disthreeline[2])[0]
             thetype.append(threeline[2])
             newsomething = [threeline[1], "LIST", lookuptype[threeline[2]]]
-            listezfunc.append([newsomething[0]])
+            listezfunc.append(newsomething[0])
             listfunctions.append(newsomething)
             simplerer = tosimple(newsomething)
             simplerer[3] = 1
@@ -236,6 +236,7 @@ def toline(line, index,listofindents):
     else:
         if (simpler[1] == 0):
             listall[simpler[2]].append(disthreeline[1])
+
             threeline[1] = disthreeline[1]
         else:
             threeline[1] = findword(listall[simpler[2]], disthreeline[1])[0]
@@ -251,8 +252,10 @@ def toline(line, index,listofindents):
         listofindents[int(threeline[2])]=-1
     elif ("COMPARE" in threeline[0] or threeline[0].startswith("IF") or threeline[0].endswith("IF")):
         listofindents[counter] = 1
+
         listofindents[int(threeline[2])]=-1
     elif (threeline[0] == "DEFINE"):
+        listfunctions.append(threeline[0])
         listofindents[int(counter)] = 1
     counter += 1
     if (len(threeline[1]) == 0 or len(threeline[2]) == 0):

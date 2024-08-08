@@ -9,3 +9,4 @@ compile to exe
 add strings of all numbers
 perf optimization?
 writing lower level compiler????
+add compiler errors
