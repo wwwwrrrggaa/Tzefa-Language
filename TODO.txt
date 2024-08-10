@@ -1,12 +1,12 @@
 Missions:
-clean code
-new edit distance
-fix the stack
-add support for lower case letters and more than 3 words in line
-think about improving the language!!!!
-runtime debuging
-compile to exe
-add strings of all numbers
-perf optimization?
-writing lower level compiler????
+clean code:Focus
+new edit distance:Focus
+fix the stack:check
+add support for lower case letters and more than 3 words in line:First part is already implamented second part once features are decided
+think about improving the language!!!!:Future
+runtime debuging:Future
+compile to exe:in the end
+add strings of all numbers:Done
+perf optimization?:Not needed/done
+writing lower level lexer/run time????:Sounds fun but not now
 add compiler errors

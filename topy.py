@@ -1,7 +1,3 @@
-
-thetype = None
-
-
 def makeparenthasis(listofvals):
     stri = "("
     for i in range(len(listofvals) - 1):
@@ -9,13 +5,14 @@ def makeparenthasis(listofvals):
     stri = stri + " " + str(listofvals[-1]) + " )"
     return stri
 
-def strreadvalue(type,name):
-    return "getvar"+makeparenthasis([tostri(type),tostri(name)])+".read()"
+
+def strreadvalue(type, name):
+    return "getvar" + makeparenthasis([tostri(type), tostri(name)]) + ".read()"
+
 
 lineupdate = "endline() ;"
 infunction = False
 dictoffunct = {i[0]: i for i in [[0]]}
-# print(dictoffunct)
 dictofinstructions = {i: "thetext" for i in dictoffunct}
 listfunctionswithtypes = {i[0]: i for i in [[0]]}
 listfunctionswithtypes["GREATESTDIV"] = ["GREATESTDIV", "LIST", "LIST"]
@@ -26,10 +23,13 @@ for i in listfunctionswithtypes:
 
 listofindentchanges = [0 for i in range(1, 1000 + 1)]
 
-def getinstructions(listfunctions,listezfunctions):
-    global dictoffunct,listfunctionswithtypes
-    dictoffunct={i[0]: i for i in listezfunctions}
-    listfunctionswithtypes={i[0]: i for i in listfunctions}
+
+def getinstructions(listfunctions, listezfunctions):
+    global dictoffunct, listfunctionswithtypes
+    dictoffunct = {i[0]: i for i in listezfunctions}
+    listfunctionswithtypes = {i[0]: i for i in listfunctions}
+
+
 def tostri(value):
     return "'" + str(value) + "'"
 
@@ -69,7 +69,7 @@ def MAKEBOOLEAN(name, value, linenum):
 
 def NEWLIST(name, value, linenum):
     global infunction
-    inparan = strreadvalue("INT",value)
+    inparan = strreadvalue("INT", value)
     inparan = makeparenthasis(['"LIST"', tostri(name), inparan])
 
     if (infunction):
@@ -226,7 +226,8 @@ def PRINTINTEGER(name, state, linenum):
 
 
 def SETINDEX(name, index, linenum):
-    return ("line(" + str(linenum) + "); getvar('LIST'," + tostri(name) + ").changeindex(" + strreadvalue("INT",index) + "); endline()")
+    return ("line(" + str(linenum) + "); getvar('LIST'," + tostri(name) + ").changeindex(" + strreadvalue("INT",
+                                                                                                          index) + "); endline()")
 
 
 def GETSTRING(listname, name, linenum):

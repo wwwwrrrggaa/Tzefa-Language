@@ -434,7 +434,7 @@ class EERROR(Exception):
         print("Executing too many  function calls ")
         print("List of function calls")
         for i in functioncalls:
-            print(i)
+            pass
         print(" ")
         printvars()
         sys.exit(0)
@@ -721,35 +721,6 @@ def updatelineexitingcall(type, namevaroutput):
     endline()
     return thevar
 
-
-def updateline(line, functionupdate, allthelocals=None, oldvar=None, newvar=None):
-    global currentline, linecount, linelimit, functioncount, functionlimit, allthevars
-    currentline = line
-    linecount += 1
-    if (linecount == linelimit):
-        errore.linelimiterror()
-    elif (functionupdate == 1):
-        if (oldvar != None):
-            oldvar.changeread(False)
-            oldvar.changewrite(False)
-        if (newvar != None):
-            newvar.changeread(True)
-            newvar.changewrite(True)
-        if (allthelocals != None):
-            switchtonewcall(allthevars, allthelocals)
-        functioncount += functionupdate
-        functioncalls.push([call])
-        if (functioncount == recursionlimit):
-            errore.overflowerror(functioncalls)
-    elif (functionupdate == -1):
-        thecallstack, varstack = functioncalls.pop()
-        returntoolastcall(allthevars, thecallstack)
-        var, values = varstack.pop()
-        var.changeread(True)
-        var.changewrite(True)
-        var.override(*values)
-
-
 localsvars = Stack()  #### the stack for locals created in function
 localsvars.push({"INT": {}, "STR": {}, "LIST": {}})
 localsstack = Stack()  ###### the stack of the program locals
@@ -787,7 +758,5 @@ stackoflocalconds = Stack()
 localsstack.push(programlocals)
 dictlocalvars = examplelocalvars.copy()
 allthelocalconds = {}
-# print(allthevars)
 errore = EERROR()
-# printvars()
 alltheconds['THETRUTH'] = THETRUTH

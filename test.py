@@ -1,6 +1,6 @@
 from createdpython import * 
-line(1); addvar( "INT" , 'INTEGERONE' , 144 ); endline() ;
-line(2); addvar( "INT" , 'INTEGERTWO' , 96 ); endline() ;
+line(1); addvar( "INT" , 'INTEGERONE' , 32 ); endline() ;
+line(2); addvar( "INT" , 'INTEGERTWO' , 4 ); endline() ;
 line(3); addvar( "LIST" , 'GCDLIST' , getvar( 'INT' , 'TWO' ).read() ); endline() ;
 line(4); getvar('LIST','GCDLIST').changeindex(getvar( 'INT' , 'ZERO' ).read()); endline()
 line(5);getvar('LIST','GCDLIST') .placevalue('INTEGERONE',"INT"); endline()

@@ -1,11 +1,20 @@
 from fast_edit_distance import edit_distance
+
 import Number2Name
+
+
 def giveinstructions():
     ### returns instructions for each function in the language for topy
-    return listfunctions,listezfunc
-listofindents=[]
+    return listfunctions, listezfunc
+
+
+listofindents = []
+
+
 def updatesizelistofindnets(size):
-    listofindents = [0] * (size+1)
+    listofindents = [0] * (size + 1)
+
+
 def tosimple(func):
     simpler = ['a', 'b', 'c', 'd']
     simpler[0] = func[0]
@@ -150,29 +159,31 @@ def sendlines(i):
 def giveindents():
     return listofindents
 
+
 def findword(somelist, word):
     min = 999
     tobereturned = [0, 0,
                     0]
-    lentobereturned=16
+    lentobereturned = 16
     for b in range(len(somelist)):
         lenword = len(word)
         i = somelist[b]
-        lenofi  = len(i)
+        lenofi = len(i)
         if (i == word):
             return [i, b]
         else:
-            distance = edit_distance(word, i,4)
+            distance = edit_distance(word, i, 4)
             if (distance < min):
                 min = distance
                 tobereturned = [i, b]
                 lentobereturned = len(tobereturned[0])
             elif (distance == min):
-                if (abs(lenword - lenofi) < abs(lenword- lentobereturned)):
+                if (abs(lenword - lenofi) < abs(lenword - lentobereturned)):
                     tobereturned = [i, b]
                     lentobereturned = len(tobereturned[0])
 
     return tobereturned
+
 
 def handelfirstword(firstword):
     func, index = findword(listezfunc, firstword)
@@ -182,7 +193,7 @@ def handelfirstword(firstword):
         return (func, index, 1)
 
 
-def toline(line, index,listofindents):
+def toline(line, index, listofindents):
     global counter
     global thetype
     global insidefunction
@@ -254,14 +265,14 @@ def toline(line, index,listofindents):
             threeline[2] = disthreeline[2]
     if (threeline[0] == "WHILE"):
         listofindents[counter] = 1
-        listofindents[int(threeline[2])]=-1
+        listofindents[int(threeline[2])] = -1
     elif (threeline[0] == "ITERATE"):
         listofindents[counter] = 1
-        listofindents[int(threeline[2])]=-1
+        listofindents[int(threeline[2])] = -1
     elif ("COMPARE" in threeline[0] or threeline[0].startswith("IF") or threeline[0].endswith("IF")):
         listofindents[counter] = 1
 
-        listofindents[int(threeline[2])]=-1
+        listofindents[int(threeline[2])] = -1
     elif (threeline[0] == "DEFINE"):
         listfunctions.append(threeline[0])
         listofindents[int(counter)] = 1
