@@ -1,216 +1,235 @@
-Sat Aug 10 21:16:23 2024    output.prof
+Tue Aug 13 11:27:09 2024    output.prof
 
-         9370 function calls (9362 primitive calls) in 0.013 seconds
+         9665 function calls (9656 primitive calls) in 0.016 seconds
 
    Ordered by: internal time
 
    ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-        3    0.006    0.002    0.006    0.002 {built-in method io.open_code}
-       70    0.002    0.000    0.003    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\ErrorCorrection.py:163(findword)
+       70    0.004    0.000    0.005    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\ErrorCorrection.py:163(findword)
+        4    0.002    0.001    0.002    0.001 {built-in method _io.open_code}
         1    0.001    0.001    0.001    0.001 {built-in method builtins.compile}
         1    0.001    0.001    0.001    0.001 {built-in method nt.replace}
-        8    0.000    0.000    0.000    0.000 {built-in method nt.stat}
-     4379    0.000    0.000    0.000    0.000 {built-in method builtins.len}
-        1    0.000    0.000    0.000    0.000 {built-in method io.open}
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:1(<module>)
+       11    0.001    0.000    0.001    0.000 {built-in method nt.stat}
+        1    0.001    0.001    0.002    0.002 {built-in method _io.open}
+        1    0.000    0.000    0.001    0.001 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:1(<module>)
+     4403    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+        1    0.000    0.000    0.016    0.016 C:\Users\yonat\PycharmProjects\Tzefa-Language\main.py:7(main)
         1    0.000    0.000    0.000    0.000 {built-in method nt.open}
+        2    0.000    0.000    0.000    0.000 {built-in method marshal.loads}
      3324    0.000    0.000    0.000    0.000 {built-in method builtins.abs}
-        1    0.000    0.000    0.013    0.013 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\main.py:7(main)
-        1    0.000    0.000    0.000    0.000 {built-in method marshal.loads}
-       26    0.000    0.000    0.002    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\ErrorCorrection.py:196(toline)
-        3    0.000    0.000    0.000    0.000 {method 'read' of '_io.BufferedReader' objects}
-        4    0.000    0.000    0.000    0.000 {method '__exit__' of '_io._IOBase' objects}
-       10    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:96(_path_join)
-        1    0.000    0.000    0.000    0.000 {method 'write' of '_io.FileIO' objects}
-        6    0.000    0.000    0.000    0.000 {built-in method builtins.__build_class__}
+        4    0.000    0.000    0.000    0.000 {method 'read' of '_io.BufferedReader' objects}
+        5    0.000    0.000    0.000    0.000 {method '__exit__' of '_io._IOBase' objects}
+       11    0.000    0.000    0.000    0.000 {built-in method builtins.__build_class__}
+       15    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:96(_path_join)
+       26    0.000    0.000    0.004    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\ErrorCorrection.py:196(toline)
        16    0.000    0.000    0.000    0.000 {built-in method builtins.print}
-      202    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\Number2Name.py:1(get_name)
-        2    0.000    0.000    0.008    0.004 <frozen importlib._bootstrap_external>:1007(get_code)
-        1    0.000    0.000    0.003    0.003 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\main.py:42(<listcomp>)
-        1    0.000    0.000    0.001    0.001 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\test.py:1(<module>)
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:119(printvars)
-       23    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\topy.py:1(makeparenthasis)
-      152    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:203(__init__)
-      3/1    0.000    0.000    0.013    0.013 {built-in method builtins.exec}
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\topy.py:422(makepyfile)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1607(find_spec)
+        1    0.000    0.000    0.000    0.000 {method 'write' of '_io.FileIO' objects}
+        3    0.000    0.000    0.007    0.002 <frozen importlib._bootstrap_external>:1062(get_code)
+        1    0.000    0.000    0.003    0.003 C:\Users\yonat\PycharmProjects\Tzefa-Language\test.py:1(<module>)
+      4/1    0.000    0.000    0.016    0.016 {built-in method builtins.exec}
+      202    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\Number2Name.py:1(get_name)
+        3    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:1593(find_spec)
+        1    0.000    0.000    0.002    0.002 <frozen importlib._bootstrap_external>:195(_write_atomic)
+        3    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap>:1240(_find_spec)
+        4    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:468(__init__)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:119(printvars)
+      3/2    0.000    0.000    0.010    0.005 <frozen importlib._bootstrap>:1349(_find_and_load)
        28    0.000    0.000    0.000    0.000 {method 'write' of '_io.TextIOWrapper' objects}
-       26    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\topy.py:413(makepredict)
-        4    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:471(<listcomp>)
-        1    0.000    0.000    0.001    0.001 <frozen importlib._bootstrap_external>:185(_write_atomic)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1054(_find_spec)
-      2/1    0.000    0.000    0.009    0.009 <frozen importlib._bootstrap>:1165(_find_and_load)
-       26    0.000    0.000    0.001    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\ErrorCorrection.py:188(handelfirstword)
-       58    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\topy.py:33(tostri)
-        1    0.000    0.000    0.000    0.000 {built-in method marshal.dumps}
-        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:437(cache_from_source)
-        3    0.000    0.000    0.006    0.002 <frozen importlib._bootstrap_external>:1127(get_data)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:179(_get_module_lock)
-       14    0.000    0.000    0.000    0.000 {built-in method builtins.getattr}
-       28    0.000    0.000    0.000    0.000 {built-in method _codecs.charmap_encode}
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\test.py:12(GCD)
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:676(updatelinewithcall)
-       52    0.000    0.000    0.000    0.000 {method 'startswith' of 'str' objects}
-       28    0.000    0.000    0.000    0.000 C:\Users\yonat\anaconda3\Lib\encodings\cp1252.py:18(encode)
-       73    0.000    0.000    0.000    0.000 {method 'endswith' of 'str' objects}
-      2/1    0.000    0.000    0.009    0.009 <frozen importlib._bootstrap_external>:934(exec_module)
+       23    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\topy.py:1(makeparenthasis)
+        1    0.000    0.000    0.003    0.003 C:\Users\yonat\PycharmProjects\Tzefa-Language\topy.py:422(makepyfile)
+       26    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\topy.py:413(makepredict)
+        4    0.000    0.000    0.003    0.001 <frozen importlib._bootstrap_external>:1183(get_data)
+       66    0.000    0.000    0.000    0.000 {method 'startswith' of 'str' objects}
+       94    0.000    0.000    0.000    0.000 {method 'endswith' of 'str' objects}
+        6    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:482(cache_from_source)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:304(acquire)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:426(_get_module_lock)
+       26    0.000    0.000    0.001    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\ErrorCorrection.py:188(handelfirstword)
+        1    0.000    0.000    0.002    0.002 C:\Users\yonat\anaconda3\envs\basenv\Lib\encodings\__init__.py:71(search_function)
+      152    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:203(__init__)
        52    0.000    0.000    0.000    0.000 {method 'split' of 'str' objects}
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:493(_init_module_attrs)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1467(_get_spec)
-        4    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:468(__init__)
-        1    0.000    0.000    0.001    0.001 <frozen importlib._bootstrap_external>:1156(set_data)
-      2/1    0.000    0.000    0.009    0.009 <frozen importlib._bootstrap>:1120(_find_and_load_unlocked)
-        5    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:132(_path_split)
-      2/1    0.000    0.000    0.009    0.009 <frozen importlib._bootstrap>:666(_load_unlocked)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:778(spec_from_file_location)
-       10    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:119(<listcomp>)
-      114    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:237(iswritable)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1602(_get_spec)
-        6    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\topy.py:228(SETINDEX)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:100(acquire)
-        5    0.000    0.000    0.000    0.000 {built-in method builtins.max}
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:566(module_from_spec)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:169(__enter__)
-       30    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:147(getvar)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:567(_get_cached)
-        7    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\topy.py:9(strreadvalue)
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:709(updatelineexitingcall)
-        2    0.000    0.000    0.000    0.000 C:\Users\yonat\anaconda3\Lib\site-packages\_distutils_hack\__init__.py:82(find_spec)
-       15    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:134(<genexpr>)
-        4    0.000    0.000    0.000    0.000 {built-in method _thread.allocate_lock}
-        1    0.000    0.000    0.001    0.001 <frozen importlib._bootstrap_external>:1151(_cache_bytecode)
-       13    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:244(_verbose_message)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:642(_classify_pyc)
-        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:740(_code_to_timestamp_pyc)
-      5/3    0.000    0.000    0.002    0.001 <frozen importlib._bootstrap>:233(_call_with_frames_removed)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:172(_path_isabs)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:675(_validate_timestamp_pyc)
-        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:140(_path_stat)
-        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:727(_compile_bytecode)
-        2    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:619(copyvar)
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\topy.py:29(<dictcomp>)
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\topy.py:30(<dictcomp>)
-        2    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\topy.py:37(MAKEINTEGER)
-        5    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:84(_unpack_uint32)
-        6    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:252(makecopy)
-        4    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\topy.py:267(WRITEINTEGER)
-       19    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:658(endline)
-       34    0.000    0.000    0.000    0.000 {method 'rstrip' of 'str' objects}
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:125(release)
-        3    0.000    0.000    0.000    0.000 {method 'format' of 'str' objects}
-        2    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:511(placevalue)
-       28    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
-        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:79(_pack_uint32)
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:467(LIST)
-       14    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
-       10    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
-        3    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:135(addvar)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1499(find_spec)
-        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:392(cached)
-        1    0.000    0.000    0.013    0.013 <string>:1(<module>)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:71(__init__)
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:202(VALUE)
-        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:150(_path_is_mode_type)
-        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1030(__exit__)
-       20    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:23(line)
-        2    0.000    0.000    0.000    0.000 {built-in method _imp.is_builtin}
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\topy.py:133(COMPARE)
-        2    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\topy.py:337(ASSSIGNINT)
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:646(returntooldlocals)
-        2    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:331(__init__)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:173(__exit__)
-       28    0.000    0.000    0.000    0.000 <frozen codecs>:276(reset)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:599(_check_name_wrapper)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1146(path_stats)
-       10    0.000    0.000    0.000    0.000 {method 'rpartition' of 'str' objects}
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:198(cb)
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\ErrorCorrection.py:18(tosimple)
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\topy.py:94(LEFTSIDE)
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:292(mod)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:159(_path_isfile)
-        1    0.000    0.000    0.001    0.001 <frozen importlib._bootstrap_external>:999(source_to_code)
-        2    0.000    0.000    0.000    0.000 {built-in method nt._path_splitroot}
-       12    0.000    0.000    0.000    0.000 {built-in method _imp.release_lock}
-        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1026(__enter__)
-        2    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\topy.py:240(GETINTEGER)
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\topy.py:70(NEWLIST)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:48(_new_module)
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\topy.py:102(RIGHTSIDE)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:67(_relax_case)
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\topy.py:27(getinstructions)
-       10    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:219(read)
-        4    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:255(copyvar)
-       12    0.000    0.000    0.000    0.000 {built-in method _imp.acquire_lock}
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:560(tostring)
-        5    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:57(push)
-        2    0.000    0.000    0.000    0.000 {built-in method builtins.locals}
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\topy.py:83(BASICCONDITION)
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\topy.py:202(RETURN)
-        2    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:629(<listcomp>)
-        4    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:473(<listcomp>)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:920(find_spec)
-        5    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:243(tostring)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:357(__init__)
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:352(EERROR)
-        5    0.000    0.000    0.000    0.000 {built-in method from_bytes}
-        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:579(_calc_mode)
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\topy.py:325(MODULO)
-        6    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
-        6    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:748(find_spec)
-        2    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:314(assignint)
-        4    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:50(__init__)
-        6    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1424(_path_importer_cache)
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:179(returntoolastcall)
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:171(switchtonewcall)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:405(parent)
-        4    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:496(changeindex)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:165(__init__)
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:345(giveresult)
-        3    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:60(pop)
-        6    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:240(isreadable)
-        4    0.000    0.000    0.000    0.000 {method '__exit__' of '_thread.lock' objects}
-        4    0.000    0.000    0.000    0.000 {method 'extend' of 'bytearray' objects}
-        3    0.000    0.000    0.000    0.000 {method 'to_bytes' of 'int' objects}
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\topy.py:194(LISTFUNCTION)
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:31(Node)
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:67(addcond)
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:330(COND)
-        6    0.000    0.000    0.000    0.000 {built-in method nt.fspath}
-        2    0.000    0.000    0.000    0.000 {built-in method _imp.find_frozen}
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1097(__init__)
-        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:164(_path_isdir)
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:49(Stack)
-        4    0.000    0.000    0.000    0.000 {built-in method _thread.get_ident}
-        4    0.000    0.000    0.000    0.000 {method 'pop' of 'list' objects}
-        1    0.000    0.000    0.000    0.000 <frozen codecs>:260(__init__)
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:96(backtooldconds)
-        2    0.000    0.000    0.000    0.000 {method 'replace' of 'str' objects}
-        1    0.000    0.000    0.000    0.000 <frozen codecs>:186(__init__)
-        3    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:111(getcond)
-        3    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:590(iswritable)
-        2    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:536(read)
-        2    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:339(changeleft)
-        2    0.000    0.000    0.000    0.000 {method 'pop' of 'dict' objects}
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:87(movetonewconds)
-        2    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:342(changeright)
-        2    0.000    0.000    0.000    0.000 {method 'copy' of 'dict' objects}
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:413(has_location)
-        2    0.000    0.000    0.000    0.000 C:\Users\yonat\anaconda3\Lib\site-packages\_distutils_hack\__init__.py:89(<lambda>)
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\ErrorCorrection.py:6(giveinstructions)
-        2    0.000    0.000    0.000    0.000 {method 'copy' of 'list' objects}
-        1    0.000    0.000    0.000    0.000 {method 'index' of 'list' objects}
-        1    0.000    0.000    0.000    0.000 {built-in method _imp._fix_co_filename}
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1122(get_filename)
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:355(__init__)
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:216(forcewrite)
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:581(changeread)
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:584(changewrite)
-        2    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:593(isreadable)
+        1    0.000    0.000    0.000    0.000 {built-in method marshal.dumps}
+        7    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:132(_path_split)
+       58    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\topy.py:33(tostri)
+      3/2    0.000    0.000    0.010    0.005 <frozen importlib._bootstrap>:1304(_find_and_load_unlocked)
+      3/2    0.000    0.000    0.009    0.005 <frozen importlib._bootstrap_external>:989(exec_module)
+      3/2    0.000    0.000    0.009    0.005 <frozen importlib._bootstrap>:911(_load_unlocked)
+       28    0.000    0.000    0.000    0.000 {built-in method _codecs.charmap_encode}
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:733(_init_module_attrs)
+        1    0.000    0.000    0.002    0.002 <frozen importlib._bootstrap_external>:1212(set_data)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:802(spec_from_file_location)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:676(updatelinewithcall)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\topy.py:27(getinstructions)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\test.py:12(GCD)
+       48    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+        7    0.000    0.000    0.000    0.000 {built-in method builtins.max}
         1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+       51    0.000    0.000    0.000    0.000 {method 'rstrip' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\anaconda3\envs\basenv\Lib\encodings\cp1255.py:1(<module>)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:124(setdefault)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:74(__new__)
+        3    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:1491(_get_spec)
+        3    0.000    0.000    0.000    0.000 C:\Users\yonat\anaconda3\envs\basenv\Lib\site-packages\_distutils_hack\__init__.py:82(find_spec)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:232(__init__)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:806(module_from_spec)
+       28    0.000    0.000    0.000    0.000 C:\Users\yonat\anaconda3\envs\basenv\Lib\encodings\cp1255.py:18(encode)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:764(_code_to_timestamp_pyc)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1588(_get_spec)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:699(_validate_timestamp_pyc)
+        3    0.000    0.000    0.000    0.000 {built-in method _imp.is_builtin}
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:666(_classify_pyc)
+      7/5    0.000    0.000    0.004    0.001 <frozen importlib._bootstrap>:480(_call_with_frames_removed)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:372(release)
+       21    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:134(<genexpr>)
+       22    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\anaconda3\envs\basenv\Lib\encodings\__init__.py:43(normalize_encoding)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:172(_path_isabs)
+       14    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
+        6    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\topy.py:228(SETINDEX)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:416(__enter__)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:751(_compile_bytecode)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:611(_get_cached)
+       20    0.000    0.000    0.000    0.000 {built-in method builtins.getattr}
+      114    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:237(iswritable)
+        2    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:619(copyvar)
+       19    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:491(_verbose_message)
+       11    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:140(_path_stat)
+        7    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\topy.py:9(strreadvalue)
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:84(_unpack_uint32)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:150(_path_is_mode_type)
+       16    0.000    0.000    0.000    0.000 {method 'rpartition' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\topy.py:37(MAKEINTEGER)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:162(__enter__)
+        1    0.000    0.000    0.002    0.002 {built-in method builtins.__import__}
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\anaconda3\envs\basenv\Lib\encodings\cp1255.py:33(getregentry)
+       12    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:79(__init__)
+        3    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:1520(find_spec)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:709(updatelineexitingcall)
+        1    0.000    0.000    0.002    0.002 <frozen importlib._bootstrap_external>:1207(_cache_bytecode)
+        2    0.000    0.000    0.000    0.000 {method 'format' of 'str' objects}
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:79(_pack_uint32)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:48(_new_module)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:643(_check_name_wrapper)
+       30    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:147(getvar)
+        6    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:632(cached)
+        4    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\topy.py:267(WRITEINTEGER)
+        2    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:511(placevalue)
+       18    0.000    0.000    0.000    0.000 {built-in method _imp.acquire_lock}
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:467(LIST)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1202(path_stats)
+        3    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:135(addvar)
+       11    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:173(__exit__)
+        6    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.locals}
+        1    0.000    0.000    0.000    0.000 {built-in method _codecs.charmap_build}
+        3    0.000    0.000    0.000    0.000 {built-in method _thread.allocate_lock}
+        3    0.000    0.000    0.000    0.000 {built-in method nt._path_splitroot}
+        6    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:252(makecopy)
+       19    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:658(endline)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:82(remove)
+        1    0.000    0.000    0.016    0.016 <string>:1(<module>)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:159(_path_isfile)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:445(cb)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\topy.py:133(COMPARE)
+        2    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:331(__init__)
+       18    0.000    0.000    0.000    0.000 {built-in method _imp.release_lock}
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:67(_relax_case)
+        1    0.000    0.000    0.000    0.000 <frozen codecs>:94(__new__)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:202(VALUE)
+        3    0.000    0.000    0.000    0.000 {built-in method _imp.find_frozen}
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\topy.py:83(BASICCONDITION)
+       12    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1222(__enter__)
+        1    0.000    0.000    0.001    0.001 <frozen importlib._bootstrap_external>:1054(source_to_code)
+        4    0.000    0.000    0.000    0.000 {built-in method __new__ of type object at 0x00007FFB82DF7A20}
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:292(mod)
+       12    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1226(__exit__)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\topy.py:70(NEWLIST)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:982(find_spec)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\ErrorCorrection.py:18(tosimple)
+        2    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\topy.py:337(ASSSIGNINT)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1128(find_spec)
+        2    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\topy.py:240(GETINTEGER)
+        4    0.000    0.000    0.000    0.000 {method 'replace' of 'str' objects}
+        8    0.000    0.000    0.000    0.000 {method 'pop' of 'list' objects}
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:420(__exit__)
+        5    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:243(tostring)
+        5    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:57(push)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:31(Node)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:646(returntooldlocals)
+        8    0.000    0.000    0.000    0.000 {built-in method from_bytes}
+       28    0.000    0.000    0.000    0.000 <frozen codecs>:276(reset)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\topy.py:94(LEFTSIDE)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\topy.py:102(RIGHTSIDE)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:560(tostring)
+       20    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:23(line)
+       10    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:219(read)
+        9    0.000    0.000    0.000    0.000 {built-in method nt.fspath}
+        6    0.000    0.000    0.000    0.000 {method 'isalnum' of 'str' objects}
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1469(_path_importer_cache)
+        3    0.000    0.000    0.000    0.000 {built-in method _weakref._remove_dead_weakref}
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\topy.py:202(RETURN)
+        4    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:50(__init__)
+        6    0.000    0.000    0.000    0.000 {method '__exit__' of '_thread.RLock' objects}
+        4    0.000    0.000    0.000    0.000 {method 'extend' of 'bytearray' objects}
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:645(parent)
+        4    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:255(copyvar)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:185(_path_abspath)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:623(_calc_mode)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:330(COND)
+        6    0.000    0.000    0.000    0.000 {built-in method _thread.get_ident}
+        3    0.000    0.000    0.000    0.000 {method 'pop' of 'dict' objects}
+        2    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:314(assignint)
+        3    0.000    0.000    0.000    0.000 {method 'to_bytes' of 'int' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\topy.py:325(MODULO)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:171(switchtonewcall)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:599(__init__)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:179(returntoolastcall)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:352(EERROR)
+        4    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:496(changeindex)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1153(__init__)
+        2    0.000    0.000    0.000    0.000 {built-in method _imp._fix_co_filename}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:164(_path_isdir)
+        3    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:60(pop)
+        3    0.000    0.000    0.000    0.000 {method 'remove' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\topy.py:194(LISTFUNCTION)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:345(giveresult)
+        6    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:240(isreadable)
+        6    0.000    0.000    0.000    0.000 {method 'isascii' of 'str' objects}
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:412(__init__)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\anaconda3\envs\basenv\Lib\encodings\cp1255.py:9(Codec)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:67(addcond)
+        1    0.000    0.000    0.000    0.000 <frozen codecs>:186(__init__)
+        2    0.000    0.000    0.000    0.000 {method 'copy' of 'dict' objects}
+        2    0.000    0.000    0.000    0.000 {method 'copy' of 'list' objects}
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:986(create_module)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:49(Stack)
+        2    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:339(changeleft)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.setattr}
+        2    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:536(read)
+        1    0.000    0.000    0.000    0.000 <frozen codecs>:260(__init__)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:96(backtooldconds)
+        3    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:111(getcond)
+        1    0.000    0.000    0.000    0.000 {method 'index' of 'list' objects}
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:158(__init__)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\anaconda3\envs\basenv\Lib\encodings\cp1255.py:17(IncrementalEncoder)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:653(has_location)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:87(movetonewconds)
+        3    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:590(iswritable)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\anaconda3\envs\basenv\Lib\encodings\cp1255.py:21(IncrementalDecoder)
+        2    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:342(changeright)
         1    0.000    0.000    0.000    0.000 {built-in method builtins.id}
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:931(create_module)
-        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\createdpython.py:8(<lambda>)
+        3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1178(get_filename)
+        2    0.000    0.000    0.000    0.000 C:\Users\yonat\anaconda3\envs\basenv\Lib\site-packages\_distutils_hack\__init__.py:89(<lambda>)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\ErrorCorrection.py:6(giveinstructions)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\anaconda3\envs\basenv\Lib\encodings\cp1255.py:25(StreamWriter)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\anaconda3\envs\basenv\Lib\encodings\cp1255.py:28(StreamReader)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:216(forcewrite)
+        2    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:593(isreadable)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:581(changeread)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:584(changewrite)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:8(<lambda>)
+        1    0.000    0.000    0.000    0.000 C:\Users\yonat\PycharmProjects\Tzefa-Language\createdpython.py:355(__init__)
 
 

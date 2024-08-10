@@ -420,7 +420,7 @@ def makepredict(listi, i):
 
 
 def makepyfile(listi):
-    f = open(r"C:\Users\yonat\PycharmProjects\Tzefa-Language-v1\test.py", 'w+')
+    f = open(r"C:\Users\yonat\PycharmProjects\Tzefa-Language\test.py", 'w+')
     f.write("from createdpython import * \n")
     counterindent = 0
     indent = "    "
